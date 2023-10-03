@@ -1,0 +1,25 @@
+
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container-fluid">
+
+    <img src="{% static 'images/logo.png'%}">
+     <a class="navbar-brand" href="#">Subnet Congo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+        <a class="nav-link" href="#">Produits</a>
+        <a class="nav-link" href="#">clients</a>
+        <a class="nav-link" href="#">commandes</a>
+
+      </div>
+
+    </div>
+  </div>
+  <span><Font color="yellow">Salut!{{request.user}}</Font></span>
+  <span><a href="{% url 'quitter'%}">Quitter</a></span>
+</nav>
